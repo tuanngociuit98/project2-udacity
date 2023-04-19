@@ -12,7 +12,7 @@ variables:
   # TODO: Replace the service connection name
   azureServiceConnectionId: 'service connection'
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: 'Udacity-webapp'
+  webAppName: 'mywebapp19042023'
   # Environment name
   environmentName: 'deployment'
   # Project root folder. Point to the folder containing manage.py file.
@@ -65,3 +65,4 @@ stages:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              startUpCommand: 'python app.py'
