@@ -24,17 +24,29 @@ stages:
   jobs:
   - job: BuildJob
     steps:    
+
+    # - script: |
+    #     python3 -m pip install --upgrade pip
+    #     python3 -m pip install setup
+    #     python3 -m pip install -r requirements.txt
+    #   workingDirectory: $(projectRoot)
+
     - script: |
-        python3 -m pip install --upgrade pip
-        python3 -m pip install setup
-        python3 -m pip install -r requirements.txt
+         python -m venv antenv
+         source antenv/bin/activate
+         python -m pip install --upgrade pip
+         pip install setup
+         pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
       workingDirectory: $(projectRoot)
+      displayName: "Install requirements"  
+    
     - script: |
         export PATH=$HOME/.local/bin:$PATH
         make install
         make lint
       workingDirectory: $(projectRoot)
       displayName: 'Run lint tests'
+    
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
