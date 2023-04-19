@@ -12,7 +12,7 @@ variables:
   # TODO: Replace the service connection name
   azureServiceConnectionId: 'pipelineConnection'
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: 'myapp382738'
+  webAppName: 'deploymentmachine'
   # Environment name
   environmentName: 'deployment'
   # Project root folder. Point to the folder containing manage.py file.
