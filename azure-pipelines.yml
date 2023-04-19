@@ -10,7 +10,7 @@ pool: myAgentPool
 
 variables:
   # TODO: Replace the service connection name
-  azureServiceConnectionId: 'service connection'
+  azureServiceConnectionId: 'pipelineConnection'
   # TODO: Replace 'mywebapp193576' with the existing Web App name
   webAppName: 'mywebapp19042023'
   # Environment name
