@@ -10,9 +10,9 @@ pool: myAgentPool
 
 variables:
   # TODO: Replace the service connection name
-  azureServiceConnectionId: 'pipelineConnection'
+  azureServiceConnectionId: 'my-connection'
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: 'deploymentmachine'
+  webAppName: 'project2-udacity'
   # Environment name
   environmentName: 'deployment'
   # Project root folder. Point to the folder containing manage.py file.
