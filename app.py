@@ -3,7 +3,6 @@ from flask.logging import create_logger
 import logging
 
 import pandas as pd
-# from sklearn.externals import joblib
 import joblib
 from sklearn.preprocessing import StandardScaler
 
@@ -28,7 +27,6 @@ def home():
 @app.route("/predict", methods=['POST'])
 def predict():
     # Performs an sklearn prediction
-
     try:
         # Load pretrained model as clf. Try any one model. 
         # clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
