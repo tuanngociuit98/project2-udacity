@@ -90,7 +90,7 @@ def test_hello_subtract():
 Now it is time to run make all which will install, lint, and test code. This enables us to ensure we don't check in broken code to GitHub as it installs, lints, and tests the code in one command. Later we will have a remote build server perform the same step.
 ![image](https://user-images.githubusercontent.com/61376012/187730347-3c64347d-9f05-485e-a98f-01128308ccbf.png)  
 
-```
+
 ## 2. Configure GitHub Actions
 ## Enable Github Actions
 Go to your Github Account and enable Github Actions.  
