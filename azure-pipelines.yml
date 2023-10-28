@@ -12,7 +12,7 @@ variables:
   # TODO: Replace the service connection name
   azureServiceConnectionId: 'my-connection'
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: 'project2-udacity'
+  webAppName: 'mywebapp28102023'
   # Environment name
   environmentName: 'deployment'
   # Project root folder. Point to the folder containing manage.py file.
