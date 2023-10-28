@@ -1,1 +1,1 @@
-az webapp up --name mywebapp18102023 --resource-group Azuredevops --runtime "PYTHON:3.8"
+az webapp up --name mywebapp28102023 --resource-group Azuredevops --runtime "PYTHON:3.8"
