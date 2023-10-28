@@ -13,7 +13,8 @@ Python 3.8
 ## Instructions
 This diagram shows how code can be tested automatically by enabling GitHub Actions. The push change to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  
 
-https://user-images.githubusercontent.com/61376012/192126512-d1835585-3000-42c0-8713-95b6900c92ef.png
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/c5f52222-da4a-4ffb-bb3a-2a3fe3265e11)
+
 
 # Continuous Delivery on Azure
 ## 1. Set up azure cloud shell
@@ -88,12 +89,12 @@ def test_hello_subtract():
 
 ## Local Test
 Now it is time to run make all which will install, lint, and test code. This enables us to ensure we don't check in broken code to GitHub as it installs, lints, and tests the code in one command. Later we will have a remote build server perform the same step.
-![image](https://user-images.githubusercontent.com/61376012/187730347-3c64347d-9f05-485e-a98f-01128308ccbf.png)  
-
-
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/8ac0d9f8-2835-49c6-94bc-c1a01bf31fae)
+ 
 ## 2. Configure GitHub Actions
 ## Enable Github Actions
 Go to your Github Account and enable Github Actions.  
+
 
 ## Replace yml code
 ```
@@ -124,7 +125,8 @@ jobs:
 ```
 ## Verify Remote Tests pass
  Push the changes to GitHub and verify that both lint and test steps pass in your project.  
- ![image](https://user-images.githubusercontent.com/61376012/187731568-f31e0b91-c846-4b64-95f1-1cae861f36a1.png)  
+ ![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/982da017-2341-464c-a57b-8f4566456aff)
+ 
  
  ## 3. Continuous Delivery on Azure
  
@@ -134,7 +136,9 @@ jobs:
 ![image](https://user-images.githubusercontent.com/61376012/187732705-ac8abb31-0ee9-4948-ac7a-c68393eead95.png)  
 
 ## Set up a Service connection
-![image](https://user-images.githubusercontent.com/61376012/187732898-7b9af3af-7e36-45b7-b022-8862750aa32a.png)  
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/a7b768ca-113f-4a3b-a17d-ef062c5e95e5)
+
+  
 
 ## Clone code from this start repo
 Your repo should have these file  
@@ -157,32 +161,37 @@ After successful linking, your Azure DevOps organization should be able to hook 
 
 ## Create a Web App Manually
 Clone the repo in Cloud shell  
-![image](https://user-images.githubusercontent.com/61376012/187734812-4459d889-0a2b-4f79-9bf7-fa89508ea33a.png)  
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/c73bb864-dd68-4eda-9acc-8d23db3d923e)
+ 
 
 ```
-git clone https://github.com/nhan-123/project2-azure-udacity.git
+git clone git@github.com:tuanngociuit98/project2-udacity.git
 ```
 Create a web app service
 ```
 az webapp up --name <Your_unique_app_name> --resource-group Azuredevops --runtime "PYTHON:3.8"
 ```
 Create an app service and initially deploy your app in Cloud Shell  
-![image](https://user-images.githubusercontent.com/61376012/187735491-cdadc2b1-e0ba-4a3e-8bc0-7ae7ff650767.png)
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/7a803715-9d27-43bf-9ed5-d14c39ab1d1f)
+
 
 Verify  
-![image](https://user-images.githubusercontent.com/61376012/187735694-e8295a7a-0684-43d5-b16b-fc7d12406a68.png)
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/9f0f4dc3-fe4c-4695-844d-223192ad2035)
+
 
 Perform Prediction  
 ```
 ./make_predict_azure_app.sh 
 ```
-![image](https://user-images.githubusercontent.com/61376012/187735980-3f628f59-6360-4f13-8980-2660327b970a.png)  
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/c98803a9-8a4b-4a0d-ab72-ae89479278d6)
+ 
 
 Perform Locust test  
 ![image](https://user-images.githubusercontent.com/61376012/192128006-366587fd-0ee5-4a8f-83be-0a4e960f446b.png)
 ## Azure pipline agent
 Create a Personal Access Token (PAT)  
-![image](https://user-images.githubusercontent.com/61376012/187736336-9268aa62-f337-4c76-ad2f-cc1566dbd139.png)
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/f3e2606b-9eef-4a96-9366-f155930a9e25)
+
 Create a new PAT, and ensure that it has a "Full access" scope  
 
 Create an Agent pool  
@@ -206,16 +215,19 @@ sudo usermod -aG docker $USER
 exit
 ```
 Go back to the DevOps portal, and open the newly created Agent pool to add a new agent. The snapshot below will help you understand better.  
-![image](https://user-images.githubusercontent.com/61376012/187737571-08686395-579a-45a7-b709-8b8d86faf216.png)
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/26687975-056c-481e-8854-f825e7cde197)
 
-![image](https://user-images.githubusercontent.com/61376012/187737626-32bc08f7-d291-4062-b225-6f59c8e43798.png)
+
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/ca077e77-b8bf-4a1f-ba61-7b3b3b66092e)
+
 
 Run the following commands to finish the set up  
 ```
 sudo ./svc.sh install
 sudo ./svc.sh start
 ```
-![image](https://user-images.githubusercontent.com/61376012/187737823-5ca3423f-e9ab-4957-af5d-de9f75d149dd.png)  
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/4d7bac37-ccde-4ba3-8b3f-d1b2470efcd7)
+
 
 We have to install some additional packages to enable our agent build the Flask application code. These commands are specific to our sample Flask application, you can extend them per your application requirements:  
 
@@ -233,8 +245,107 @@ sudo apt-get install python3.8-distutils
 sudo apt-get -y install zip
 ```
 In you Azure DevOps, navigate to Organization Settings >> Agent Pools >> myAgentPool and then select the Agents tab. Confirm that the self-hosted agent is online.  
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/522e8fb7-af81-46e3-99c1-c029b398be77)
 
+## Set up the DevOps Pipeline
+Create a Pipeline
+Go back to the DevOps project, select Pipeline and create a new one
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/9b811d9f-c8ee-4003-8cfa-0f39afe48a1d)
 
+Choose the Github repository as the source code location
+
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/3479730e-d678-418a-bff7-b4ef549ca985)
+
+![image](https://github.com/tuanngociuit98/project2-udacity/assets/33689489/47b57bc4-ae0f-4a36-8b93-f711b1444e20)
+
+Update azure-pipelines.yml file
+```
+# Starter pipeline    
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger:
+- main
+
+# TODO: Replace the agent pool name
+pool: myAgentPool
+
+variables:
+  # TODO: Replace the service connection name
+  azureServiceConnectionId: 'my-connection'
+  # TODO: Replace 'mywebapp193576' with the existing Web App name
+  webAppName: 'mywebapp28102023'
+  # Environment name
+  environmentName: 'deployment'
+  # Project root folder. Point to the folder containing manage.py file.
+  projectRoot: $(System.DefaultWorkingDirectory)
+  pythonVersion: 3.8
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: BuildJob
+
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+    
+    - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        python -m pip install --upgrade pip
+        pip install setup
+        pip install -r requirements.txt
+      workingDirectory: $(projectRoot)
+      displayName: "Install requirements"
+    
+    - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        make install
+        make lint
+      workingDirectory: $(projectRoot)
+      displayName: "Run Lint test"
+      
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(projectRoot)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      displayName: 'Upload package'
+      artifact: drop
+
+- stage: Deploy
+  displayName: 'Deploy Web App'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeploymentJob
+    environment: $(environmentName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App '
+            inputs:
+              azureSubscription: $(azureServiceConnectionId)
+              appName: $(webAppName)
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+```
 ## Enhancements
 
 In the process of deploying project, i have some difficulty with test I things in the future, i must create new branch and new environment for test  
