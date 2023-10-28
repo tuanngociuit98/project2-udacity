@@ -7,7 +7,7 @@ A sample Flask application to showcase the Azure Pipeline.
 Python 3.8
 
 ## Project Plan
-* The link to a Trello board for the project:
+* The link to a Trello board for the project: https://trello.com/b/wX7l97Bj/welcome-to-trello
 * A link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1m6zZXn3XC81D-l7tc1rlogK6gIEbZ8dp6SONkMXYoBE/edit#gid=0
 
 ## Instructions
