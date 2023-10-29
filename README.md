@@ -8,7 +8,7 @@ Python 3.8
 
 ## Project Plan
 * The link to a Trello board for the project: https://trello.com/b/wX7l97Bj/welcome-to-trello
-* A link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1m6zZXn3XC81D-l7tc1rlogK6gIEbZ8dp6SONkMXYoBE/edit#gid=0
+* A link to a spreadsheet that includes the original and final project plan: [https://docs.google.com/spreadsheets/d/1m6zZXn3XC81D-l7tc1rlogK6gIEbZ8dp6SONkMXYoBE/edit#gid=0](https://docs.google.com/spreadsheets/d/1m6zZXn3XC81D-l7tc1rlogK6gIEbZ8dp6SONkMXYoBE/edit?usp=sharing)
 
 ## Instructions
 This diagram shows how code can be tested automatically by enabling GitHub Actions. The push change to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  
